@@ -34,6 +34,8 @@ Our pretrained model is available [here](https://drive.google.com/drive/folders/
 ```
 important arguments:
 --trained_model trained model path (default:'./DS')
+--dataset_path your test set path (default: './data/DS/test/')
+--dataset_txt_path your test set list path (default: './data/DS/test/test.txt')
 ```
 
 ### Training
@@ -42,4 +44,5 @@ important arguments:
 ```
 important arguments:
 --target_domain (options: 'DS_U', 'MOS_U', 'ViSha') (default: 'DS_U')
+--dataset_U_path your video domain dataset path (default: './data/DS/train/')
 ```
