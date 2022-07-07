@@ -41,12 +41,12 @@ def cal_precision_recall_mae(prediction, gt):
     prediction = prediction / 255.
     gt = gt / 255.
 
-    prediction = (prediction > 0.5)
+    prediction_bool = (prediction > 0.5)
     gt = (gt > 0.5)
-    prediction = prediction.astype(np.float)
+    prediction_bool = prediction_bool.astype(np.float)
     gt = gt.astype(np.float)
 
-    mae = np.mean(np.abs(prediction - gt))
+    mae = np.mean(np.abs(prediction_bool - gt))
 
     hard_gt = np.zeros(prediction.shape)
     hard_gt[gt > 0.5] = 1
