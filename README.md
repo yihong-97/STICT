@@ -13,6 +13,15 @@ It is available at [Google Drive](https://drive.google.com/drive/folders/1IkRtl9
 |[MOS-all](https://drive.google.com/drive/folders/1XGs8ZhN35DevGi8FJ3fGkoX3wW7eLZt9?usp=sharing)|34 / 16|4613 / 1307|(530-1920)×(360-1080)|
 |[MOS-test](https://drive.google.com/file/d/1irfq8u85vditoC4pb7YXeHoLGDo8AfvV/view?usp=sharing)|13 / 13|873 / 873|1920×1080,1600×900|
 
+### evaluation over predictions
+Run ```python evaluate.py ```
+```
+important arguments:
+-gp, --gt_path ground truth path
+-pp, --pred_path your predicitons path
+```
+Our pretrained shadow maps is available [here](https://drive.google.com/drive/folders/1qC_xIY5miPJ85dtfxa-ltVoSCaIvlP3p?usp=sharing)(DS, MOS, ViSha)
+
 ## Spatio-Temporal Interpolation Consistency Training
 
 ### Requirement
@@ -39,7 +48,7 @@ important arguments:
 ```
 
 ### Training
-1. Download pretrained models ([ReNet](https://download.pytorch.org/models/resnet50-19c8e357.pth) and [FlowNet](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing)) into ```./pretrained_model``` folder
+1. Download pretrained models ([ResNet](https://download.pytorch.org/models/resnet50-19c8e357.pth) and [FlowNet](https://drive.google.com/file/d/1hF8vS6YeHkx3j2pfCeQqqZGwA_PJq_Da/view?usp=sharing)) into ```./pretrained_model``` folder
 2. Run ```python train.py ```
 ```
 important arguments:
